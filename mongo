@@ -1,0 +1,9 @@
+Use database;
+db.asignaturas.insertOne({'id':0001, 'nombre':'programación'})
+db.alumnos.deleteMany({'id':'31113'})
+db.collectionName.updateOne(<filter>, <update>);
+db.collectionName.updateMany(<filter>, <update>);
+db.collectionName.replaceOne(<filter>, <update>); [reemplaza todas las propiedades]
+
+db.coches.updateMany({"potencia":"caballos"},{$set:{"potencia":200}});
+db.Clientes.updateMany({},{$set:{"ID_Operacion":0000}});
