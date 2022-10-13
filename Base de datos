@@ -1,0 +1,69 @@
+##  Crear tablas ##
+
+CREATE TABLE Productos(
+ID INT,
+DESCRIPCION VARCHAR(50) NOT NULL,
+STOCKACTUAL INT,
+STOCKMÍNIMO INT,
+   PVP INT,
+PRIMARY KEY(ID)
+);
+
+CREATE TABLE VENTAS(
+IDVENTA INT,
+    FECHAVENTA DATE NOT NULL,
+    IDCLIENTE INT,
+    IDPRODUCTO INT,
+    CANTIDAD INT,
+    PRIMARY KEY(IDVENTA),
+	FOREIGN KEY(IDCLIENTE) REFERENCES Clientes(ID),
+	FOREIGN KEY(IDPRODUCTO) REFERENCES Productos(ID)
+);
+
+
+##  Iner Join  ##
+
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+LEFT JOIN (TABLA)
+RIGHT JOIN (TABLA)
+ON table1.column_name = table2.column_name;
+
+
+##  All/Any  ##
+
+select * from profesores 
+where edad>all/any(select edad from alumnos)
+
+//all necesita que todos sean true
+any con que uno sea true te lo devuelve
+
+
+##  Count  ##
+
+select count(nombre)
+from personas
+where nombre like 'p_p_'
+
+select count(distinct (nombre))       //esto solo da los nombres diferentes.
+
+
+##  GroupBy/OrderBy ##
+
+SELECT column_name(s),count(*)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+
+
+##  Like  ##
+
+select nombre 
+from personas 
+where nombre like '%paco%' aqui te daria todo lo que contenga paco
+
+select nombre
+from personas
+where nombre like 'p_c_'
