@@ -12,3 +12,5 @@ AllowTcpForwarding no
 ForceCommand internal-sftp
 
 $ sudo systemctl restart ssh
+
+$ sudo addgroup sftp
