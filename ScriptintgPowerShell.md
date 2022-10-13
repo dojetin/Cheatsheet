@@ -48,5 +48,5 @@ New-Item -Path 'C:\temp\NewFolder' -ItemType Directory
 ## Reproducir con voz
 $a = New-Object –ComObject SAPI.SPVoice
 
-$a. speak(“Hola amigos de fesac, hablo mejor que loquendo”)
+$a.Speak("Barça, Barça, Baaaaaaaaaarsa!")
 
