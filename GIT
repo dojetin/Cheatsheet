@@ -1,0 +1,111 @@
+GIT
+
+git init
+Te vas a la carpeta que sea, click derecho, git bash here para abrir el terminal con esa ruta
+Git init para comenzar con el proceso de la destrucción final (para que se inicie la cosa)
+Si no lo tienes enlazado en la carpeta de git de Git Hub tienes tres enlaces que debes de poner de uno en uno para enlazarlo
+
+git status
+Git status -s para ver los archivos que tienes en la carpeta, te aparecen en rojo si no están enlazados
+
+git add
+Git add . para añadirlos todos o git add "nombre del archivo" para añadir uno en específico
+
+git commit
+git commit -m "comienzo del programa" crea una revisión del estado de los archivos con el nombre que queramos. Es como una versión del programa a la cual podremos volver cuando queramos
+
+git revert [hashid]
+Deshace un commit
+
+git merge [rama 1] [rama 2]
+fusiona el contenido de dos ramas
+
+git branch [nombre nueva rama] [nombre rama actual]
+crea una rama nueva
+git branch -d [nombre rama]
+elimina una rama
+
+git clone "dirección web del repositorio" .
+clona el repositorio si ponemos el punto al final se clona en nuestra carpeta actual, si no se creará una carpeta nueva
+
+git log
+git log --oneline nos muestra todos los commit que hemos hecho con su respectivo hash id
+git log --pretty="%h %an %ar - %s" te lo muestra más bonito y con más datos
+  
+git show [hashid] o v1.5 (sin los corchetes) 
+te dice los cambios que hubo en ese commit
+
+git blame -L [nombre archivo]
+te dice quien ha hecho los cambios en ese archivo, también se le pueden añadir las líneas donde quieres que te lo busque git blame -L 6,10 [nombre archivo]
+git tag -a v1.5 -m “esta es la versión 1.5”
+1.5 es un ejemplo
+
+git cherry-pick origin/master [hashid]
+una forma de quedarte con algunos archivos de otros commits
+
+git rebase --interactive --root
+sirve para unir commits antiguos que ya no se usan, o renombrar un commit
+o algunas otras cosas
+
+git checkout [nombre rama] o [hashid] o [master] [head(esta es la última revisión)] .
+cambia de rama
+git checkout -- [nombre archivo] .
+Recupera archivos de commits anteriores.
+
+git diff
+te muestra las diferencias de un archivo modificado (working directory) y el original (ultimo commit)
+
+git difftool
+si tenemos instalado tkdiff podemos usar el siguiente comando para ver las diferencias entre archivos mejor visualmente
+
+.gitignore
+Si creas un archivo .gitignore ej: nano .gitignore y dentro escribes *.tmp cada vez que hagas un git add . no añadirá los ficheros con extensión .tmp.
+* aviso el archivo .gitignore habrá que añadirlo con un git add .gitignore para 
+que funcione
+
+
+GITHUB 
+git init // inicializa no haces nada, es simplemente como marcar el seguimiento
+git status -s // lo que controla
+git add . //añade 
+git commit -m "comienzo del programa"
+
+
+
+git init
+git add .
+git commit -m "comienzo"
+git remote add origin https://github.com/PabloN1/Calculadora.git
+git branch -M main
+git push -u origin main
+
+git pull-> actualiza el local con los cambios que se producen en el remoto.
+git tag 29-04-22v1 -m "version 1 del proyecto" -> sirve para crear versiones de nuestro codigo cuando queremos finalizar una parte del desarrollo
+git push  --tags subir los ta  creados en un nuestro repositorio local al repositorio github
+git clone "direccion web del repositorio" -> clona el repositorio
+
+git log --oneline -->
+git log status
+git branch nombre --> crea una rama con el nombre indicador
+git Branch -> te muestra las ramas que existen y donde te encuentras.
+git checkout nombre -> cambia de branch
+
+
+Te vas a la carpeta que sea, click derecho, git bash here para abrir el terminal con esa ruta
+
+Git init para comenzar con el proceso de la destrucción final (para que se inicie la cosa)
+
+Si no lo tienes enlazado en la carpeta de git de Git Hub tienes tres enlaces que debes de poner de uno en uno para enlazarlo
+
+Git status -s para ver los archivos que tienes en la carpeta, te aparecen en rojo si no están enlazados
+
+Git add . para añadirlos todos o git add "nombre del archivo" para añadir uno en específico
+
+Si le haces alguna modificación después de eso haces un git commit y se actualiza
+
+Haces de nuevo un git status -s para ver si se subieron
+
+Y luego los subes con un push "nombre del push"
+
+Git push
+
