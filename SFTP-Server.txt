@@ -1,3 +1,14 @@
 Primero necesitamos tener instalado ssh
 
 Una vez instalado
+sudo nano /etc/ssh/sshd_config
+
+Now, paste the following lines at the end or bottom of the file:
+
+Match group sftp
+ChrootDirectory /home
+X11Forwarding no
+AllowTcpForwarding no
+ForceCommand internal-sftp
+
+$ sudo systemctl restart ssh
