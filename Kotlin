@@ -1,0 +1,17 @@
+Mapas y listas:
+map.containsKey(clave)    Te dice si la clave ya esta en el mapa
+map[clave]                Te dice los valores de esa clave en concreto//Si no tiene valores te devuelve null
+map.forEach{}             Para iterar se usa la clave-valor
+map.values.forEach        Iteras solo los valores, no la clave y el valor
+it.value                   
+it.map{}                    Itera cada valor del mapa
+emptyList<Int>()            crea una lista vacía
+list.max                    Te da el maximo de una lista
+
+
+
+
+
+Implementar un metodo a una clase 
+ej isPair a los int
+fun Int.isPair()=this%2==0
