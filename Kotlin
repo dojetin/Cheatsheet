@@ -9,9 +9,6 @@ emptyList<Int>()            crea una lista vacía
 list.max                    Te da el maximo de una lista
 
 
-
-
-
 Implementar un metodo a una clase 
 ej isPair a los int
 fun Int.isPair()=this%2==0
