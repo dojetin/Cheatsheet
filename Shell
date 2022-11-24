@@ -10,3 +10,6 @@ pstree display running processes as a tree
 kill - kills the process having PID as that entered.
 kill -9 - performs a violent kill
 killall - kills all instances of processname
+
+ufw allow puerto          Abre puerto
+
