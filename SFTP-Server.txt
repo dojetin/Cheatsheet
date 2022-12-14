@@ -1,5 +1,5 @@
 Primero necesitamos tener instalado ssh
-
+sudo apt install ssh
 Una vez instalado
 sudo nano /etc/ssh/sshd_config
 
