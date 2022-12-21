@@ -8,6 +8,8 @@ sudo apt install ssh
 sudo nano /etc/ssh/sshd_config      --Cambiamos el puerto
 sudo systemctl restart ssh          --Resetea el servicio ssh
 
+
+
 # Instalar aplicación web en Linux [WordPress]
 
 ## Actualizo repos
@@ -32,22 +34,37 @@ sudo apt install php libapache2-mod-php php-mysql php-curl php-gd php-xml php-mb
 
 ## Descargar WordPress
 wget https://es.wordpress.org/latest-es_ES.zip
-unzip latest-es_ES.zip ^C
+unzip latest-es_ES.zip 
+mv wordpress /var/www/html
+nano wp-config-sample.php		Y lo guardas sin el sample
+
+sudo apt install unzip
+
 mv wordpress/ /var/www/html/
 sudo chown -R www-data:www-data /var/www/html/wordpress
+
+
+
+
+
+
+
 
 
 ## Ponemos IP fija  mejor no hacerlo
 sudo cd /etc/netplan o sudo nano /etc/network/interfaces
 
 Configuración de dirección IP fija para el interfaz eth0
-auto eth0
-iface eth0 inet static
-address 192.168.1.50
-netmask 255.255.255.0
-network 192.168.1.0
-broadcast 192.168.1.255
-gateway 192.168.1.1
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3:
+     dhcp4: no
+     addresses: [192.168.15.113/24]
+     gateway4: 192.168.1.1
+     nameservers:
+       addresses: [8.8.8.8,8.8.4.4]
 
 sudo netplan apply
 
