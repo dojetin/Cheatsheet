@@ -8,7 +8,7 @@ sudo apt install ssh
 sudo nano /etc/ssh/sshd_config      --Cambiamos el puerto
 sudo systemctl restart ssh          --Resetea el servicio ssh
 
-## Ponemos IP fija
+## Ponemos IP fija  mejor no hacerlo
 sudo cd /etc/netplan o sudo nano /etc/network/interfaces
 
 Configuración de dirección IP fija para el interfaz eth0
@@ -29,3 +29,11 @@ apt-get install ufw     -- Instalas el firewall
 ufw enable              -- Activas el firewall y te bloquea todos los puertos
 ufw status numbered     -- Para ver las reglas que hemos creado numeradas
 ufw allow puerto        -- Abre puerto
+
+
+## USB en un VBOX
+                          --Introduces el usb 
+fdisk -l                  --Te muestra los discos que tienes insertados entre ellos el USB 
+mkdir usb                 --Creas una carpeta
+mount /dev/sdb2 /mnt/usb  --Montas el usb en esa carpta y cualquier cosa que copies dentro se guarda
+unmount /dev/sdb2
