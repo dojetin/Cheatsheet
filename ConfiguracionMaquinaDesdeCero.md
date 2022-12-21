@@ -38,9 +38,10 @@ unzip latest-es_ES.zip
 mv wordpress /var/www/html
 nano wp-config-sample.php		Y lo guardas sin el sample
 
-sudo apt install unzip
 
-mv wordpress/ /var/www/html/
+
+
+sudo apt install unzip
 sudo chown -R www-data:www-data /var/www/html/wordpress
 
 
