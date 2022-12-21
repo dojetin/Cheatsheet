@@ -32,7 +32,7 @@ ufw allow puerto        -- Abre puerto
 
 
 ## USB en un VBOX
-                          --Introduces el usb 
+.                         --Introduces el usb 
 fdisk -l                  --Te muestra los discos que tienes insertados entre ellos el USB 
 mkdir usb                 --Creas una carpeta
 mount /dev/sdb2 /mnt/usb  --Montas el usb en esa carpta y cualquier cosa que copies dentro se guarda
