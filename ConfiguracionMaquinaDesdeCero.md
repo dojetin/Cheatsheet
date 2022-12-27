@@ -33,17 +33,33 @@ mysql -u root
 sudo apt install php libapache2-mod-php php-mysql php-curl php-gd php-xml php-mbstring php-xmlrpc php-zip php-soap php-intl -y
 
 ## Descargar WordPress
+cd /home/
 wget https://es.wordpress.org/latest-es_ES.zip
+apt install unzip
 unzip latest-es_ES.zip 
 mv wordpress /var/www/html
+
+
+## Si lo vas a configurar por la web 
+
+Nombre de la base de datos:	wordpress
+Nombre de usuario:		wordpressuser
+Contraseña:			fesac1235
+Servidor de la base de datos:	localhost
+Prefijo de tabla:		wp_
+
+
+Título del sitio:		DesviaciónTipica
+Nombre de usuario:		davidelete
+Contraseña	
+•••••••••••••
+Tu correo electrónico:		davideletewow@hotmail.es
+
+
+
+## Si lo vas a configurar por codigo
 nano wp-config-sample.php		Y lo guardas sin el sample
-
-
-
-
-sudo apt install unzip
 sudo chown -R www-data:www-data /var/www/html/wordpress
-
 
 
 
