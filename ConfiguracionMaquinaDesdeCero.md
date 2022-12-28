@@ -9,7 +9,6 @@ sudo nano /etc/ssh/sshd_config      --Cambiamos el puerto
 sudo systemctl restart ssh          --Resetea el servicio ssh
 
 
-
 # Instalar aplicación web en Linux [WordPress]
 
 ## Actualizo repos
@@ -59,7 +58,7 @@ Tu correo electrónico:		davideletewow@hotmail.es
 
 ## Si lo vas a configurar por codigo
 nano wp-config-sample.php		Y lo guardas sin el sample
-sudo chown -R www-data:www-data /var/www/html/wordpress
+sudo chown -R www-data:www-data /var/www/html/wordpress ## No hacer esto
 
 
 
