@@ -12,7 +12,8 @@ kill -9 - performs a violent kill
 killall - kills all instances of processname
 
 
-
+## Ports
 ufw allow puerto          Abre puerto
 
 ## TRYHACKME
+gobuster -u http://fakebank.com -w wordlist.txt dir       -- Find hidden website pages
