@@ -58,11 +58,7 @@ Tu correo electrónico:		davideletewow@hotmail.es
 
 ## Si lo vas a configurar por codigo
 nano wp-config-sample.php		Y lo guardas sin el sample
-sudo chown -R www-data:www-data /var/www/html/wordpress ## No hacer esto
-
-
-
-
+sudo chown -R www-data:www-data /var/www/html/wordpress
 
 
 
