@@ -1,6 +1,6 @@
 ## Configuracion de un Ubuntu Minimal desde cero.
 
-# Es importante si estamos en una maquina virtual tenerlo en adaptador puente
+(Es importante si estamos en una maquina virtual tenerlo en adaptador puente)
 sudo apt install net-tools
 
 ## Primero necesitamos tener instalado SSH
