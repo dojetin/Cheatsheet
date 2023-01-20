@@ -1,0 +1,9 @@
+npm install -g @angular/cli@latest          --En la carpeta que quieras instalar angular 
+
+cd carpeta donde lo has instalado           
+
+ng new                                      --Te pedira el nombre de la carpeta que se va a crear del proyecto angular
+
+cd .\primerProyectitoAngular\
+
+ng serve                                    --Levanta el servidor
