@@ -1,3 +1,5 @@
+
+## Instalacion
 npm install -g @angular/cli@latest          --En la carpeta que quieras instalar angular 
 
 cd carpeta donde lo has instalado           
