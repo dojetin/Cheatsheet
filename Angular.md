@@ -16,4 +16,5 @@ ng serve                                    --Levanta el servidor
 
 
 ## Comandos
+antes de poder crear el componente, debes de haber creado la carpeta components
 ng g component components/miSegundoComponente             --Crea un componente con comandos
