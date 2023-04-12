@@ -22,6 +22,7 @@ sudo ufw app list
 
 ## Instalo MySQL Server
 sudo apt install mysql-server -y
+
 mysql -u root
 	CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 	CREATE USER 'wordpressuser'@'%' IDENTIFIED WITH mysql_native_password BY 'fesac1235';
