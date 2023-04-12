@@ -35,9 +35,13 @@ sudo apt install php libapache2-mod-php php-mysql php-curl php-gd php-xml php-mb
 
 ## Descargar WordPress
 cd /home/
+
 wget https://es.wordpress.org/latest-es_ES.zip
+
 apt install unzip
+
 unzip latest-es_ES.zip 
+
 mv wordpress /var/www/html
 
 
