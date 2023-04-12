@@ -46,6 +46,7 @@ mv wordpress /var/www/html
 
 
 ## Si lo vas a configurar por la web 
+Debes de buscar en el navegador la ip del servidor (O en su defecto localhost) /wordpress ejemplo: http://192.168.2.115/wordpress/
 
 Nombre de la base de datos:	wordpress
 Nombre de usuario:		wordpressuser
