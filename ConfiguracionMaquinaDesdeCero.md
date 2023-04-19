@@ -95,6 +95,14 @@ ufw enable              -- Activas el firewall y te bloquea todos los puertos
 ufw status numbered     -- Para ver las reglas que hemos creado numeradas
 ufw allow puerto        -- Abre puerto
 
+## Seguridad en los archivos y directorios
+find /var/www/html/ -type d -exec chmod 750 {} \; 
+find /var/www/html/ -type f -exec chmod 640 {} \;
+chmod 400 wp-config.php
+chmod 000 readme.html
+
+Si en el archivo /etc/apache2/apache2.conf hay una linea que contenga la palabra Indexes, la comentamos y si no la tiene añadimos un -Indexes
+(Esto hace que no se pueda entrar por el navegador a los archivos que se suban al wordpress)
 
 ## USB en un VBOX
 .                         --Introduces el usb 
