@@ -81,8 +81,6 @@ nmap -sS 192.168.0.101
 Si ya la herramienta Nmap es avanzada, se puede enriquecer con el uso de scripts.
 
 ```
-nmap -Pn --script vuln 192.168.1.105
-nmap -sV --script=http-malware-host 192.168.1.105
-nmap --script ftp-brute -p 21 192.168.1.105
-nmap -p80,443 --script http-waf-fingerprint fesac.es
+nmap -sS -sV -O -v 86.109.122.114 -n --min-rate 4000 --script vuln -oA CLIENTES/coas/map86
+
 ```
