@@ -6,3 +6,5 @@ y luego use - options
 set rhost 10.0.2.4
 run(Auxiliaris)
 exploit(Para exploits)
+
+Telnet ssh y ftp
