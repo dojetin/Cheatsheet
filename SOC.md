@@ -14,3 +14,4 @@ luego en etc/ossec.conf creas el active response
 Para bloquear IP por ssh fail nos fijamos en el ID de la regla que salta en esos intentos, creamos un script de bloqueo.
 
 
+![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/e0ddcdb9-bfc6-41a0-a698-be5af8e3ae25)
