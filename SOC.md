@@ -16,7 +16,7 @@ Para bloquear IP por ssh fail nos fijamos en el ID de la regla que salta en esos
 
 
 
- var/ossec/etc/ossec.conf
+ var/ossec/ossec.conf
 
 
 ![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/044dfe54-17e9-4108-ab96-0e709dc66eb9)
