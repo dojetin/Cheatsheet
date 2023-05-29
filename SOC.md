@@ -26,6 +26,10 @@ Para bloquear IP por ssh fail nos fijamos en el ID de la regla que salta en esos
  var/ossec/etc/active-response/bin es donde se guarda el script
 
 ![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/e0ddcdb9-bfc6-41a0-a698-be5af8e3ae25)
+	
+chmod 750 nombredelarchivo 
+
+chown root:wazuh nombre
 
 
 En esta carpeta se nos ha guardado el log de bloqueos de ip y podemos verificar si ha funcionado
