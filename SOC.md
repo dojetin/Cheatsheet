@@ -31,6 +31,7 @@ chmod 750 nombredelarchivo
 
 chown root:wazuh nombre
 
+systemctl restart wazuh-manager
 
 En esta carpeta se nos ha guardado el log de bloqueos de ip y podemos verificar si ha funcionado
 ![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/44e21a32-2de9-4b61-838c-b9380963a03c)
