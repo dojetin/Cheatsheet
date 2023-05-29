@@ -15,3 +15,14 @@ Para bloquear IP por ssh fail nos fijamos en el ID de la regla que salta en esos
 
 
 ![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/e0ddcdb9-bfc6-41a0-a698-be5af8e3ae25)
+
+
+ var/ossec/etc/ossec.conf
+
+
+![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/044dfe54-17e9-4108-ab96-0e709dc66eb9)
+
+
+
+ var/ossec/etc/active-response/bin es donde se guarda el script
+
