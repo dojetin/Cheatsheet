@@ -11,3 +11,6 @@ etc/rules/local_rules.xml creas la regla, existen grupos segun lo que haga la re
 luego en etc/ossec.conf creas el active response 
 
 
+Para bloquear IP por ssh fail nos fijamos en el ID de la regla que salta en esos intentos, creamos un script de bloqueo.
+
+
