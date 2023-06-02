@@ -52,3 +52,20 @@ Con esta configuracion seria para el agente 001
     <timeout>180</timeout>
   </active-response>
 </ossec_config>
+
+
+con crontab -l puedes mirar las tareas que estan programando
+con crontab -e puedes editar las tareas existentes
+*/5 * * * * /ruta/al/script.sh    (con eso se ejecutaria cada 5 minutos)
+0 */6 * * * /var/ossec/etc/rotateAPIkey.sh   (cada 6 horas)
+0 */6 * * * /home/rocky/lanzador.sh   (cada 6 horas)
+
+[rotateAPIkey.txt](https://github.com/dojetin/Cheatsheet/files/11634405/rotateAPIkey.txt)
+
+
+/home/rocky/lanzador.sh                                                                                                 
+#!/bin/bash
+
+bash /var/ossec/etc/lists/downList.sh
+bash /var/ossec/etc/lists/watcher.sh
+bash /var/ossec/etc/rotateAPIkey.sh
