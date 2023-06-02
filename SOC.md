@@ -44,6 +44,7 @@ Con esta configuracion seria para el agente 001
 [comando.txt](https://github.com/dojetin/Cheatsheet/files/11634443/comando.txt)
 
 (-------------------------------------------------------------------------------------------------------------------------)
+
 con crontab -l puedes mirar las tareas que estan programando
 
 con crontab -e puedes editar las tareas existentes
