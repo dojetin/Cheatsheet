@@ -37,3 +37,18 @@ systemctl restart wazuh-manager
 
 En esta carpeta se nos ha guardado el log de bloqueos de ip y podemos verificar si ha funcionado
 ![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/44e21a32-2de9-4b61-838c-b9380963a03c)
+
+
+
+Con esta configuracion seria para el agente 001
+
+<ossec_config>
+  <active-response>
+    <disabled>no</disabled>
+    <command>host-deny</command>
+    <location>defined-agent</location>
+    <agent_id>001</agent_id>
+    <level>10</level>
+    <timeout>180</timeout>
+  </active-response>
+</ossec_config>
