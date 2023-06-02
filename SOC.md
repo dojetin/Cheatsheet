@@ -37,12 +37,12 @@ systemctl restart wazuh-manager
 
 En esta carpeta se nos ha guardado el log de bloqueos de ip y podemos verificar si ha funcionado
 ![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/44e21a32-2de9-4b61-838c-b9380963a03c)
+[comando.txt](https://github.com/dojetin/Cheatsheet/files/11634443/comando.txt)
 
 
 
 Con esta configuracion seria para el agente 001
 ![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/1c147e94-7bf7-4c8d-8202-da76a2a73a43)
-[comando.txt](https://github.com/dojetin/Cheatsheet/files/11634443/comando.txt)
 
 
 con crontab -l puedes mirar las tareas que estan programando
