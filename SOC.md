@@ -60,6 +60,7 @@ con crontab -e puedes editar las tareas existentes
 0 */6 * * * /var/ossec/etc/rotateAPIkey.sh   (cada 6 horas)
 0 */6 * * * /home/rocky/lanzador.sh   (cada 6 horas)
 
+![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/55f54a74-109a-42f7-8b30-bd8a2285fd33)
 [rotateAPIkey.txt](https://github.com/dojetin/Cheatsheet/files/11634405/rotateAPIkey.txt)
 
 
