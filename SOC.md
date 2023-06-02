@@ -45,6 +45,8 @@ Con esta configuracion seria para el agente 001
 
 (-------------------------------------------------------------------------------------------------------------------------)
 
+##Como cambiar cada 6 horas la key de virustotal
+
 con crontab -l puedes mirar las tareas que estan programando
 
 con crontab -e puedes editar las tareas existentes
