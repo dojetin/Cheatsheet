@@ -61,9 +61,7 @@ con crontab -e puedes editar las tareas existentes
 [rotateAPIkey.txt](https://github.com/dojetin/Cheatsheet/files/11634405/rotateAPIkey.txt)
 
 
-/home/rocky/lanzador.sh                                                                                                 
-#!/bin/bash
+/home/rocky/lanzador.sh
+![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/23979767-e92f-479e-9a87-ad3b270bd51a)
+[comando.txt](https://github.com/dojetin/Cheatsheet/files/11634491/comando.txt)
 
-bash /var/ossec/etc/lists/downList.sh
-bash /var/ossec/etc/lists/watcher.sh
-bash /var/ossec/etc/rotateAPIkey.sh
