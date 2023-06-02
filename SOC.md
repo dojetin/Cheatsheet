@@ -41,17 +41,8 @@ En esta carpeta se nos ha guardado el log de bloqueos de ip y podemos verificar 
 
 
 Con esta configuracion seria para el agente 001
-
-<ossec_config>
-  <active-response>
-    <disabled>no</disabled>
-    <command>host-deny</command>
-    <location>defined-agent</location>
-    <agent_id>001</agent_id>
-    <level>10</level>
-    <timeout>180</timeout>
-  </active-response>
-</ossec_config>
+![imagen](https://github.com/dojetin/Cheatsheet/assets/102966393/1c147e94-7bf7-4c8d-8202-da76a2a73a43)
+[comando.txt](https://github.com/dojetin/Cheatsheet/files/11634443/comando.txt)
 
 
 con crontab -l puedes mirar las tareas que estan programando
