@@ -1,4 +1,4 @@
-etc/rules/local_rules.xml creas la regla, existen grupos segun lo que haga la regla.
+var/ossec/etc/rules/local_rules.xml creas la regla, existen grupos segun lo que haga la regla.
 
 <rule id="100100" level="10" frequency="5">
   <if_matched_sid>20005</if_matched_sid>
